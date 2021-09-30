@@ -1,0 +1,726 @@
+body {
+    font-family: "Roboto";
+    margin: 0%;
+    padding: 0%;
+  }
+
+.titulos {
+    text-align: center;
+    font-size: 300%;
+    font-weight:700 ;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+#hyp1 {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* header */
+
+header {
+    background-color: white;
+    height: 40vh;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+ }
+ button:hover {
+   box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+   transform: translateX(-3px);
+ }
+/* .navegador {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+ul li {
+    list-style-type: none;
+    background-color: blue;
+    padding:5px 30px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+} */
+
+
+/* main */
+
+
+.imagen-tipo1 {
+    width: 300px;
+    height: 500px;
+    padding: 5px;
+    margin: 5px 10px;
+    margin-left: 30px;
+    justify-self: center;
+}
+
+.imagen-tipo1:hover {
+   transform: scale(1.25);
+}
+
+.p2 {
+    width: 300px;
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 5px;
+    text-align: center;
+    justify-self: center;
+}
+
+
+.p3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40pt;
+    font-style: italic;
+    margin: 30px;
+}
+
+.direccion {
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 5px;
+    text-align: center;
+    justify-self: center;
+    padding: 5px;
+    margin: 5px 50px;
+}
+
+#lista-departamentos {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40pt;
+    text-align: center;
+    width: 50%;
+    border-width: 3pt;
+    border-color: black;
+    margin: 0 auto;
+}
+
+caption {
+    text-align: center;
+    font-size: 50px;
+    font-weight:700 ;
+}
+
+section {
+    padding-top: 25pt;
+    padding-bottom: 25pt;
+}
+
+.imagen-tipo3 {
+    width: 300px;
+    height: 500px;
+    padding: 5px;
+    margin: 5px 50px;
+    display: inline-block;
+}
+
+#maps {
+    width: 100%;
+}
+
+.p4 {
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 5px;
+    margin: 5px 50px;
+    text-align: justify;
+}
+
+#form-contacto {
+    margin: 10px 30px;
+}
+
+
+/* footer */
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "destacadas"
+        "foto1"
+        "direc1"
+        "info1"
+        "foto2 "
+        "direc2 "
+        "info2 "
+        "foto3 "
+        "direc3"
+        "info3"
+        "recientes"
+        "foto4"
+        "direc4"
+        "info4" 
+        "foto5" 
+        "direc5"
+        "info5"
+        "foto6"
+        "direc6"
+        "info6"
+        "acerca"
+        "nosotros"
+        "lista"
+        "deptos";
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+.grid-container-alquileres {
+    display: grid;
+    grid-template-areas:
+        "alquileres"
+        "foto1"
+        "direc1"
+        "info1"
+        "foto3 "
+        "direc3 "
+        "info3"
+        "foto4 "
+        "direc4"
+        "info4"
+        "foto8"
+        "direc8"
+        "info8" 
+        "foto9" 
+        "direc9"
+        "info9"
+        "foto10"
+        "direc10"
+        "info10";
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+.grid-container-ventas {
+    display: grid;
+    grid-template-areas:
+        "ventas"
+        "foto2"
+        "direc2"
+        "info2"
+        "foto5 "
+        "direc5 "
+        "info5"
+        "foto6 "
+        "direc6"
+        "info6"
+        "foto11"
+        "direc11"
+        "info11" 
+        "foto12" 
+        "direc12"
+        "info12"
+        "foto13"
+        "direc13"
+        "info13";
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+.grid-container-terrenos {
+    display: grid;
+    grid-template-areas:
+        "terrenos"
+        "foto16"
+        "direc16"
+        "info16"
+        "foto14"
+        "direc14"
+        "info14"
+        "foto15"
+        "direc15"
+        "info15"
+       ;
+    grid-template-columns:1fr;
+    grid-row-gap: 10px;
+}
+
+
+
+
+
+
+/* media query */
+
+@media only screen and (min-width:764px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "destacadas destacadas"
+            "foto1 direc1"
+            "foto1 info1"
+            "foto2 direc2"
+            "foto2 info2"
+            "foto3 direc3"
+            "foto3 info3"
+            "recientes recientes"
+            "foto4 direc4"
+            "foto4 info4"
+            "foto5 direc5"
+            "foto5 info5"
+            "foto6 direc6"
+            "foto6 info6"
+            "acerca acerca"
+            "nosotros nosotros"
+            "lista lista"
+            "deptos deptos";
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .grid-container-alquileres {
+        display: grid;
+        grid-template-areas:
+            "alquileres alquileres"
+            "foto1 direc1"
+            "foto1 info1"
+            "foto3 direc3"
+            "foto3 info3"
+            "foto4 direc4"
+            "foto4 info4"
+            "foto8 direc8"
+            "foto8 info8"
+            "foto9 direc9"
+            "foto9 info9"
+            "foto10 direc10"
+            "foto10 info10";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .grid-container-ventas {
+        display: grid;
+        grid-template-areas:
+            "ventas ventas"
+            "foto2 direc2"
+            "foto2 info2"
+            "foto5 direc5"
+            "foto5 info5"
+            "foto6 direc6"
+            "foto6 info6"
+            "foto11 direc11"
+            "foto11 info11"
+            "foto12 direc12"
+            "foto12 info12"
+            "foto13 direc13"
+            "foto13 info13";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .grid-container-terrenos {
+        display: grid;
+        grid-template-areas:
+            "terrenos terrenos"
+            "foto16 direc16"
+            "foto16 info16"
+            "foto14 direc14"
+            "foto14 info14"
+            "foto15 direc15"
+            "foto15 info15";
+        grid-template-columns: 1f 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .grid-container-contacto {
+        display: grid;
+        grid-template-areas:
+            "nombre mail"
+            "mensaje mensaje";
+        grid-template-columns: 1f 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        grid-template-areas:
+        "redes oficina";
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "destacadas destacadas destacadas"
+        "foto1 foto2 foto3"
+        "direc1 direc2 direc3"
+        "info1 info2 info3"
+        "recientes recientes recientes"
+        "foto4 foto5 foto6"
+        "direc4 direc5 direc6"
+        "info4 info5 info6"
+        "acerca acerca acerca"
+        "nosotros nosotros nosotros"
+        "lista lista lista"
+        "deptos deptos deptos";
+        } 
+    
+    .grid-container-alquileres {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "alquileres alquileres alquileres"
+        "foto1 foto3 foto4"
+        "direc1 direc3 direc4"
+        "info1 info3 info4"
+        "foto8 foto9 foto10"
+        "direc8 direc9 direc10"
+        "info8 info9 info10";
+        } 
+
+    .grid-container-ventas {
+         display: grid;
+         grid-template-columns:repeat(3, 1fr) ;
+         grid-template-areas:
+         "ventas ventas ventas"
+         "foto2 foto5 foto6"
+         "direc2 direc5 direc6"
+         "info2 info5 info6"
+         "foto11 foto12 foto13"
+         "direc11 direc12 direc13"
+         "info11 info12 info13";
+         } 
+
+    .grid-container-terrenos {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-areas:
+        "terrenos terrenos terrenos"
+        "foto16 foto14 foto15"
+        "direc16 direc14 direc15"
+        "info16 info14 info15";
+        } 
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "tasaciones tasaciones tasaciones"
+            "mapa mapa texto";
+    }
+
+     .grid-container-contacto {
+        display: grid;
+        grid-template-areas:
+            "nombre mail"
+            "mensaje mensaje";
+        grid-template-columns: 1f 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10px;
+        grid-template-areas:
+        "redes oficina";
+    }
+    }
+
+
+    
+
+    #header {
+        grid-area: header;
+    }
+
+    #alquileres {
+        grid-area: alquileres;
+    }
+
+    #ventas {
+        grid-area: ventas;
+    }
+
+    #terrenos {
+        grid-area: terrenos;
+    }
+
+    #propiedades-destacadas {
+        grid-area: destacadas;
+    }
+
+    #propiedades-recientes {
+        grid-area: recientes;
+    }
+
+    #foto1 {
+        grid-area: foto1;
+    }
+
+    #foto2 {
+        grid-area: foto2;
+    }
+
+    #foto3 {
+        grid-area: foto3;
+    }
+
+    #foto4 {
+        grid-area: foto4;
+    }
+
+    #foto5 {
+        grid-area: foto5;
+    }
+
+    #foto6 {
+        grid-area: foto6;
+    }
+
+    #foto8 {
+        grid-area: foto8;
+    }
+
+    #foto9 {
+        grid-area: foto9;
+    }
+
+    #foto10 {
+        grid-area: foto10;
+    }
+
+    #foto11 {
+        grid-area: foto11;
+    }
+
+    #foto12 {
+        grid-area: foto12;
+    }
+
+    #foto13 {
+        grid-area: foto13;
+    }
+
+    #foto14 {
+        grid-area: foto14;
+    }
+
+    #foto15 {
+        grid-area: foto15;
+    }
+
+    #foto16 {
+        grid-area: foto16;
+    }
+
+    #direc1 {
+        grid-area: direc1;
+    }
+
+    #direc2 {
+        grid-area: direc2;
+    }
+
+    #direc3 {
+        grid-area: direc3;
+    }
+
+    #direc4 {
+        grid-area: direc4;
+    }
+
+    #direc5 {
+        grid-area: direc5;
+    }
+
+    #direc6 {
+        grid-area: direc6;
+    }
+
+    #direc8 {
+        grid-area: direc8;
+    }
+
+    #direc9 {
+        grid-area: direc9;
+    }
+
+    #direc10 {
+        grid-area: direc10;
+    }
+
+    #direc11 {
+        grid-area: direc11;
+    }
+
+    #direc12 {
+        grid-area: direc12;
+    }
+
+    #direc13 {
+        grid-area: direc13;
+    }
+
+    #direc14 {
+        grid-area: direc14;
+    }
+
+    #direc15 {
+        grid-area: direc15;
+    }
+
+    #direc16 {
+        grid-area: direc16;
+    }
+
+    #info1 {
+        grid-area: info1;
+    }
+
+    #info2 {
+        grid-area: info2;
+    }
+
+    #info3 {
+        grid-area: info3;
+    }
+
+    #info4 {
+        grid-area: info4;
+    }
+
+    #info5 {
+        grid-area: info5;
+    }
+
+    #info6 {
+        grid-area: info6;
+    }
+
+    #info8 {
+        grid-area: info8;
+    }
+
+    #info9 {
+        grid-area: info9;
+    }
+
+    #info10 {
+        grid-area: info10;
+    }
+
+    #info11 {
+        grid-area: info11;
+    }
+
+    #info12 {
+        grid-area: info12;
+    }
+
+    #info13 {
+        grid-area: info13;
+    }
+
+    #info14 {
+        grid-area: info14;
+    }
+
+    #info15 {
+        grid-area: info15;
+    }
+
+    #info16 {
+        grid-area: info16;
+    }
+
+    #acerca-de-nosotros {
+        grid-area: acerca;
+    }
+
+    #nosotros {
+        grid-area: nosotros;
+    }
+
+    #lista {
+        grid-area: lista;
+    }
+
+    #lista-departamentos {
+        grid-area: deptos;
+    }
+
+    #footer {
+        grid-area: footer;
+    }
+
+    #redes {
+        grid-area: redes;
+    }
+
+    #oficina {
+        grid-area: oficina;
+    }
+
+    #mapa {
+    grid-area: mapa;
+    margin-left: 30px;
+    }
+
+    #texto {
+        grid-area: texto;
+    }
+
+    #tasaciones {
+        grid-area: tasaciones;
+    }
+
+    #nombre {
+        grid-area: nombre;
+    }
+
+    #mail {
+        grid-area: mail;
+    }
+
+    #mensaje {
+        grid-area: mensaje;
+    }
+
+    #enviar {
+        grid-area: enviar;
+        width: 150px;
+        margin: 30px;
+    }

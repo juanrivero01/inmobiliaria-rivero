@@ -1,0 +1,49 @@
+
+#contacto {
+    animation-duration: 5s;
+    animation-name: aparecer;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+@media only screen and (min-width:764px) {
+    .grid-container-contacto {
+        display: grid;
+        grid-template-areas:
+            "nombre mail"
+            "mensaje mensaje";
+        grid-template-columns: 1f 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+.grid-container-contacto {
+    display: grid;
+    grid-template-areas:
+        "nombre mail"
+        "mensaje mensaje";
+    grid-template-columns: 1f 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+}
+
+#nombre {
+grid-area: nombre;
+}
+#mail {
+grid-area: mail;
+}
+#mensaje {
+grid-area: mensaje;
+}
